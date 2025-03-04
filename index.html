@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-bottom: 2px solid #ddd;
+        }
+        .profile:last-child {
+            border-bottom: none;
+        }
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #2E7D32;
+        }
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2E7D32;
+            margin: 10px 0;
+        }
+        .role {
+            color: #6A1B9A;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .buttons a, .buttons button {
+            text-decoration: none;
+            padding: 8px 16px;
+            margin: 5px;
+            border-radius: 20px;
+            color: white;
+            font-size: 14px;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+        .linkedin { background-color: #0077B5; }
+        .mobile { background-color: #28A745; }
+    </style>
+    <script>
+        function showMobileNumber(number) {
+            alert("Call: " + number);
+            window.location.href = "tel:" + number;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>DevOps Insider - Batch 17</h2>
+
+    <div class="container">
+        <!-- Mahesh Pandey Profile -->
+        <div class="profile">
+            <img src="mahesh.jpg" alt="Mahesh Pandey">
+            <div class="name">Mahesh Pandey</div>
+            <div class="role">B17_G26</div>
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/maheshpandey23" class="linkedin">LinkedIn</a>
+                <button class="mobile" onclick="showMobileNumber('+919889009356')">Call</button>
+            </div>
+        </div>
+
+        <!-- Nitesh Kumar Ojha Profile -->
+        <div class="profile">
+            <img src="nitesh.jpg" alt="Nitesh Kumar Ojha">
+            <div class="name">Nitesh Kumar Ojha</div>
+            <div class="role">B17_G30</div>
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/nitesh-ojha-046596126" class="linkedin">LinkedIn</a>
+                <button class="mobile" onclick="showMobileNumber('+918435316742')">Call</button>
+            </div>
+        </div>
+
+        <!-- Deepali Chandrahas Kumble Profile -->
+        <div class="profile">
+            <img src="deepali.jpg" alt="Deepali Chandrahas Kumble">
+            <div class="name">Deepali Chandrahas Kumble</div>
+            <div class="role">B17_G35</div>
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/deepalikumble" class="linkedin">LinkedIn</a>
+                <button class="mobile" onclick="showMobileNumber('+919980274233')">Call</button>
+            </div>
+        </div>
+
+        <!-- Updesh Upadhyay Profile -->
+        <div class="profile">
+            <img src="updesh.jpg" alt="Updesh Upadhyay">
+            <div class="name">Updesh Upadhyay</div>
+            <div class="role">B17_G40</div>
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/updeshupadhyay02/" class="linkedin">LinkedIn</a>
+                <button class="mobile" onclick="showMobileNumber('+919009892503')">Call</button>
+            </div>
+        </div>
+
+        <!-- Rajesh Profile -->
+        <div class="profile">
+            <img src="rajesh.jpg" alt="Rajesh">
+            <div class="name">Rajesh prajapati</div>
+            <div class="role">B17_G45</div>
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/rajesh-prajapati-0ab714342" class="linkedin">LinkedIn</a>
+                <button class="mobile" onclick="showMobileNumber('+918826679200')">Call</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
